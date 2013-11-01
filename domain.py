@@ -14,7 +14,6 @@ def permute(domains):
     permutations = list(itertools.permutations(domains))
     return [''.join(list(words)) + '.com' for words in permutations]
      
-
 if __name__ == "__main__":
     domains = sys.argv[1:]
     permutations = permute(domains)
